@@ -16,6 +16,8 @@ namespace ClickerGameWinForms
         private int dsec = 9;
         private int sec = 10;
         private bool gameStarted = false;
+        private bool gameOver = false;
+        private int score = 0;
 
         public Form1()
         {
@@ -34,6 +36,7 @@ namespace ClickerGameWinForms
             {
                 dsec = 0;
                 GameTimer.Stop();
+                gameOver = true;
             }
 
             TimerLabel.Text = sec.ToString("00") + ":" + dsec.ToString("0");
@@ -47,7 +50,11 @@ namespace ClickerGameWinForms
                 gameStarted = true;
             }
 
-
+            if (!gameOver)
+            {
+                score += 1;
+                ScoreLabel.Text = score.ToString();
+            }            
         }
     }
 }
