@@ -22,6 +22,10 @@ namespace ClickerGameWinForms
         public Form1()
         {
             InitializeComponent();
+            this.BackColor = Color.Black;
+            TimerLabel.ForeColor = Color.White;
+            ClickerButton.ForeColor = Color.White;
+            ScoreLabel.ForeColor = Color.White;
         }
 
         private void GameTimer_Tick(object sender, EventArgs e)
