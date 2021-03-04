@@ -68,6 +68,10 @@
             this.ScoreLabel.TabIndex = 2;
             this.ScoreLabel.Text = "0";
             // 
+            // GameTimer
+            // 
+            this.GameTimer.Tick += new System.EventHandler(this.GameTimer_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
