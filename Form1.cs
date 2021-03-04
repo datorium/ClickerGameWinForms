@@ -15,11 +15,11 @@ namespace ClickerGameWinForms
 
         private int dsec = 9;
         private int sec = 10;
+        private bool gameStarted = false;
 
         public Form1()
         {
             InitializeComponent();
-            GameTimer.Start();
         }
 
         private void GameTimer_Tick(object sender, EventArgs e)
@@ -37,6 +37,17 @@ namespace ClickerGameWinForms
             }
 
             TimerLabel.Text = sec.ToString("00") + ":" + dsec.ToString("0");
+        }
+
+        private void ClickerButton_Click(object sender, EventArgs e)
+        {
+            if (!gameStarted)
+            {
+                GameTimer.Start();
+                gameStarted = true;
+            }
+
+
         }
     }
 }

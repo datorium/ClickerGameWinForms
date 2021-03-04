@@ -56,6 +56,7 @@
             this.ClickerButton.TabIndex = 1;
             this.ClickerButton.Text = "Click Here";
             this.ClickerButton.UseVisualStyleBackColor = true;
+            this.ClickerButton.Click += new System.EventHandler(this.ClickerButton_Click);
             // 
             // ScoreLabel
             // 
