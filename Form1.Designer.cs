@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.TimerLabel = new System.Windows.Forms.Label();
             this.ClickerButton = new System.Windows.Forms.Button();
             this.ScoreLabel = new System.Windows.Forms.Label();
@@ -82,8 +83,9 @@
             this.Controls.Add(this.ScoreLabel);
             this.Controls.Add(this.ClickerButton);
             this.Controls.Add(this.TimerLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Elchin";
+            this.Text = "Datorium Clicker Game";
             this.ResumeLayout(false);
             this.PerformLayout();
 
