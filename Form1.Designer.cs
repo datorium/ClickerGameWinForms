@@ -37,20 +37,21 @@
             // 
             // TimerLabel
             // 
-            this.TimerLabel.AutoSize = true;
             this.TimerLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TimerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TimerLabel.Location = new System.Drawing.Point(172, 59);
+            this.TimerLabel.Location = new System.Drawing.Point(12, 61);
             this.TimerLabel.Name = "TimerLabel";
-            this.TimerLabel.Size = new System.Drawing.Size(163, 76);
+            this.TimerLabel.Size = new System.Drawing.Size(626, 76);
             this.TimerLabel.TabIndex = 0;
             this.TimerLabel.Text = "10:0";
+            this.TimerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TimerLabel.Click += new System.EventHandler(this.TimerLabel_Click);
             // 
             // ClickerButton
             // 
             this.ClickerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClickerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClickerButton.Location = new System.Drawing.Point(127, 169);
+            this.ClickerButton.Location = new System.Drawing.Point(198, 164);
             this.ClickerButton.Name = "ClickerButton";
             this.ClickerButton.Size = new System.Drawing.Size(253, 125);
             this.ClickerButton.TabIndex = 1;
@@ -63,7 +64,7 @@
             this.ScoreLabel.AutoSize = true;
             this.ScoreLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ScoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScoreLabel.Location = new System.Drawing.Point(221, 330);
+            this.ScoreLabel.Location = new System.Drawing.Point(288, 323);
             this.ScoreLabel.Name = "ScoreLabel";
             this.ScoreLabel.Size = new System.Drawing.Size(70, 76);
             this.ScoreLabel.TabIndex = 2;
@@ -77,7 +78,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(530, 450);
+            this.ClientSize = new System.Drawing.Size(650, 450);
             this.Controls.Add(this.ScoreLabel);
             this.Controls.Add(this.ClickerButton);
             this.Controls.Add(this.TimerLabel);

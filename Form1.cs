@@ -37,10 +37,9 @@ namespace ClickerGameWinForms
                 dsec = 9;
             }
             if(sec == 0)
-            {
-                dsec = 0;
-                GameTimer.Stop();
-                gameOver = true;
+            {                
+                GameOver();
+                return;
             }
 
             TimerLabel.Text = sec.ToString("00") + ":" + dsec.ToString("0");
@@ -58,6 +57,34 @@ namespace ClickerGameWinForms
             {
                 score += 1;
                 ScoreLabel.Text = score.ToString();
+            }            
+        }
+
+        private void GameOver()
+        {
+            GameTimer.Stop();
+            gameOver = true;
+            ClickerButton.Text = "Game Over";
+            TimerLabel.Text = "Click to restart";
+        }
+
+        private void GameReset()
+        {
+            dsec = 0;
+            sec = 0;
+            score = 0;
+            gameStarted = false;
+            gameOver = false;
+            ClickerButton.Text = "Click me";
+            ScoreLabel.Text = "0";
+            TimerLabel.Text = "10:0";
+        }
+
+        private void TimerLabel_Click(object sender, EventArgs e)
+        {
+            if (gameStarted)
+            {
+                GameReset();
             }            
         }
     }
