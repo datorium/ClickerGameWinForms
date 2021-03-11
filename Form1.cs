@@ -70,8 +70,8 @@ namespace ClickerGameWinForms
 
         private void GameReset()
         {
-            dsec = 0;
-            sec = 0;
+            dsec = 9;
+            sec = 10;
             score = 0;
             gameStarted = false;
             gameOver = false;
